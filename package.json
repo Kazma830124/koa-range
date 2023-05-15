@@ -4,7 +4,8 @@
   "description": "range request implementation for koa",
   "main": "index.js",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "lint": "pnpm eslint --fix --ext .js,.ts ."
   },
   "repository": {
     "type": "git",
@@ -22,19 +23,31 @@
   },
   "homepage": "https://github.com/yorkie/koa-range",
   "devDependencies": {
-    "istanbul": "^1.1.0-alpha.1",
-    "koa": "^2.0.0",
+    "@types/etag": "^1.8.1",
+    "@types/koa": "^2.13.6",
+    "@types/koa-route": "^3.2.5",
+    "@types/mocha": "^10.0.1",
+    "@types/pump": "^1.1.1",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.59.5",
+    "@typescript-eslint/parser": "^5.59.5",
+    "istanbul": "1.1.0-alpha.1",
+    "koa": "^2.14.2",
     "koa-route": "^3.2.0",
     "make-lint": "^1.0.1",
-    "mocha": "^2.4.5",
-    "should": "^8.2.2",
-    "supertest": "^0.13.0"
+    "mocha": "^10.2.0",
+    "should": "^13.2.3",
+    "supertest": "^6.3.3"
   },
   "dependencies": {
+    "eslint": "^8.39.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "etag": "^1.8.1",
-    "mime": "^2.0.0",
+    "fresh": "^0.5.2",
     "pump": "^3.0.0",
-    "range-stream": "^2.0.0"
+    "range-parser": "^1.2.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
   },
   "engines": {
     "node": ">=7"

@@ -21,11 +21,11 @@ $ npm install koa-range
 ### Usage (with koa@2)
 
 ```js
-var fs = require('fs');
-var range = require('koa-range');
-var route = require('koa-route');
-var Koa = require('koa');
-var app = new Koa();
+let fs = require('fs');
+let range = require('koa-range');
+let route = require('koa-route');
+let Koa = require('koa');
+let app = new Koa();
 
 app.use(range);
 
